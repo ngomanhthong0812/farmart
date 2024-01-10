@@ -8,6 +8,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- <link rel="shortcut icon" href="assets/img/cropped-default-300x300.png" type="image/x-icon"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -58,22 +60,63 @@
                 </div>
             </div>
             <div class="function_icon">
-                <i class='bx bx-git-compare'></i>
-                <i class='bx bx-heart'></i>
-                <i class='bx bx-cart-alt'></i>
-                <i class='bx bx-user'></i>
+                <a href="#"><i class='bx bx-git-compare'></i></a>
+                <a href="#"><i class='bx bx-heart'></i></a>
+                <a href="#" class="my_cart"><i class='bx bx-cart-alt'></i></a>
+                <a href="#"><i class='bx bx-user'></i></a>
             </div>
         </div>
         <div class="container_menu">
             <div class="menu">
                 <div class="menu_icon"><i class='bx bx-menu'></i> <span>Shop All Groceries</span> <i
-                        class='bx bx-chevron-down'></i></div>
+                        class='bx bx-chevron-down'></i>
+                    <ul>
+                        <li><a href="#">Daily Deals</a></li>
+                        <li><a href="#">Top Promotions</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Fruits & Vegetables<i class='bx bx-chevron-right'></i></a></li>
+                        <li><a href="#">Breads Sweets<i class='bx bx-chevron-right'></i></a></li>
+                        <li><a href="#">Frozen Seafoods</a></li>
+                        <li><a href="#">Raw Meats</a></li>
+                        <li><a href="#">Wines & Alcohol Drinks</a></li>
+                        <li><a href="#">Tea & Coffee</a></li>
+                        <li><a href="#">Milks and Dairies</a></li>
+                        <li><a href="#">Pet Foods</a></li>
+                    </ul>
+                </div>
                 <div class="menu_items">
                     <ul>
-                        <li><a href="#">Home<i class='bx bx-chevron-down'></i></a></li>
-                        <li><a href="#">Shop<i class='bx bx-chevron-down'></i></a></li>
-                        <li><a href="#">Pages<i class='bx bx-chevron-down'></i></a></li>
-                        <li><a href="#">Blog<i class='bx bx-chevron-down'></i></a></li>
+                        <li><a href="#" style="color: rgb(201, 201, 201);">Home<i class='bx bx-chevron-down'></i></a>
+                            <ul>
+                                <li><a href="#">Home Suppermarket</a></li>
+                                <li><a href="#">Home Supermarket V2</a></li>
+                                <li><a href="#">Home Suppermarket Full Width</a></li>
+                                <li><a href="#">Home Local Store</a></li>
+                                <li><a href="#">Home Slidebar</a></li>
+                                <li><a href="#">Home Business</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Shop<i class='bx bx-chevron-down'></i></a>
+
+                        </li>
+                        <li><a href="#">Pages<i class='bx bx-chevron-down'></i></a>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Page 404</a></li>
+                                <li><a href="#">Coming Soon</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Blog<i class='bx bx-chevron-down'></i></a>
+                            <ul>
+                                <li><a href="#">Blog Default</a></li>
+                                <li><a href="#">Blog Small Thumbnail</a></li>
+                                <li><a href="#">Blog Grid</a></li>
+                                <li><a href="#">Blog Listing</a></li>
+                                <li><a href="#">Single Post</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">Brand<i class='bx bx-chevron-down'></i></a></li>
                         <li><a href="#">Flash Sale<i class='bx bx-chevron-down'></i></a></li>
                     </ul>
@@ -83,9 +126,26 @@
         </div>
     </header>
 
-    <slide>
-        banner ở đây
-    </slide>
+    <div class="banner_slide">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/img/banner/home_1_slider.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/banner/home_1_slider_2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/banner/slider-home-4-2-update.jpg" />
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
 
     <div class="my_body">
         <div class="flash_details">
@@ -144,7 +204,7 @@
                             <i class='bx bx-heart'></i>
                             <i class='bx bx-git-compare bx-rotate-270'></i>
                         </div>
-                        <div class="container_image"><img src="assets/img/products/06_4a-300x300.jpg" alt=""></div>
+                        <div class="container_image"><img src="assets/img/products/07_5a-150x150.jpg" alt=""></div>
                         <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
                         <div class="star">
                             <i class='bx bxs-star'></i>
@@ -178,7 +238,7 @@
                             <i class='bx bx-heart'></i>
                             <i class='bx bx-git-compare bx-rotate-270'></i>
                         </div>
-                        <div class="container_image"><img src="assets/img/products/06_4a-300x300.jpg" alt=""></div>
+                        <div class="container_image"><img src="assets/img/products/07_7b.jpg" alt=""></div>
                         <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
                         <div class="star">
                             <i class='bx bxs-star'></i>
@@ -212,7 +272,7 @@
                             <i class='bx bx-heart'></i>
                             <i class='bx bx-git-compare bx-rotate-270'></i>
                         </div>
-                        <div class="container_image"><img src="assets/img/products/06_4a-300x300.jpg" alt=""></div>
+                        <div class="container_image"><img src="assets/img/products/07_9a-150x150.jpg" alt=""></div>
                         <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
                         <div class="star">
                             <i class='bx bxs-star'></i>
@@ -246,7 +306,7 @@
                             <i class='bx bx-heart'></i>
                             <i class='bx bx-git-compare bx-rotate-270'></i>
                         </div>
-                        <div class="container_image"><img src="assets/img/products/06_4a-300x300.jpg" alt=""></div>
+                        <div class="container_image"><img src="assets/img/products/09_2a-150x150.jpg" alt=""></div>
                         <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
                         <div class="star">
                             <i class='bx bxs-star'></i>
@@ -388,7 +448,1717 @@
             </div>
         </div>
 
+
+        <div class="container_my_product">
+            <div class="my_product-product_type">
+                <span class="title">
+                    <h3>FRESH FOODS</h3>
+                </span>
+                <div class="my_product">
+                    <div class="categories">
+                        <div class="categories_box">
+                            <img src="assets/img/banner/home_1_banner_pro_1.jpg" alt="">
+                        </div>
+                        <div class="categories_menu">
+                            <ul>
+                                <div><a href="#" style="color: black; font-weight: bold;">Best Seller</a></div>
+                                <div><a href="#">Meat & Poultry</a></div>
+                                <div><a href="#">Fruit</a></div>
+                                <div><a href="#">Vegetables</a></div>
+                                <div><a href="#">Milk, Butter & Eggs</a></div>
+                                <div><a href="#">Fish</a></div>
+                                <div><a href="#">Frozen</a></div>
+                                <div><a href="#">Cheese</a></div>
+                            </ul>
+                            <ul>
+                                <div><a href="#">Desserts</a></div>
+                                <div><a href="#">Pasta & Sauce</a></div>
+                                <div><a href="#">Ham, Deli & Dips</a></div>
+                                <div><a href="#">Pizza</a></div>
+                                <div><a href="#">Soups</a></div>
+                                <div><a href="#">Accompaniments</a></div>
+                                <div><a href="#">Vegetarian Foods</a></div>
+                            </ul>
+                        </div>
+                        <span class="detail"><span>View all</span> <i class='bx bx-chevron-right'></i></span>
+                    </div>
+                    <div class="items">
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/fesh_foods/01_16a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/fesh_foods/01_6a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/fesh_foods/01_7b-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/fesh_foods/03_1a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/fesh_foods/05_11a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/fesh_foods/05_2a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/fesh_foods/05_4a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/fesh_foods/08_3b-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="my_product-product_type">
+                <span class="title">
+                    <h3>READY MEALS</h3>
+                </span>
+                <div class="my_product">
+                    <div class="categories">
+                        <div class="categories_box">
+                            <img src="assets/img/banner/home_1_banner_pro_7.jpg" alt="">
+                        </div>
+                        <div class="categories_menu">
+                            <ul>
+                                <div><a href="#" style="color: black; font-weight: bold;">Best Seller</a></div>
+                                <div><a href="#">Meat & Poultry</a></div>
+                                <div><a href="#">Fruit</a></div>
+                                <div><a href="#">Vegetables</a></div>
+                                <div><a href="#">Milk, Butter & Eggs</a></div>
+                                <div><a href="#">Fish</a></div>
+                                <div><a href="#">Frozen</a></div>
+                                <div><a href="#">Cheese</a></div>
+                            </ul>
+                            <ul>
+                                <div><a href="#">Desserts</a></div>
+                                <div><a href="#">Pasta & Sauce</a></div>
+                                <div><a href="#">Ham, Deli & Dips</a></div>
+                                <div><a href="#">Pizza</a></div>
+                                <div><a href="#">Soups</a></div>
+                                <div><a href="#">Accompaniments</a></div>
+                                <div><a href="#">Vegetarian Foods</a></div>
+                            </ul>
+                        </div>
+                        <span class="detail"><span>View all</span> <i class='bx bx-chevron-right'></i></span>
+                    </div>
+                    <div class="items">
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/ready_meals/04_2a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/ready_meals/04_4a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/ready_meals/05_11a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/ready_meals/05_1a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/ready_meals/05_2a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/ready_meals/05_4a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/ready_meals/05_8a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/ready_meals/06_9a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="my_product-product_type">
+                <span class="title">
+                    <h3>DRINKS, TEA & COFFEE</h3>
+                </span>
+                <div class="my_product">
+                    <div class="categories">
+                        <div class="categories_box">
+                            <img src="assets/img/banner/home_1_banner_pro_12.jpg" alt="">
+                        </div>
+                        <div class="categories_menu">
+                            <ul>
+                                <div><a href="#" style="color: black; font-weight: bold;">Best Seller</a></div>
+                                <div><a href="#">Meat & Poultry</a></div>
+                                <div><a href="#">Fruit</a></div>
+                                <div><a href="#">Vegetables</a></div>
+                                <div><a href="#">Milk, Butter & Eggs</a></div>
+                                <div><a href="#">Fish</a></div>
+                                <div><a href="#">Frozen</a></div>
+                                <div><a href="#">Cheese</a></div>
+                            </ul>
+                            <ul>
+                                <div><a href="#">Desserts</a></div>
+                                <div><a href="#">Pasta & Sauce</a></div>
+                                <div><a href="#">Ham, Deli & Dips</a></div>
+                                <div><a href="#">Pizza</a></div>
+                                <div><a href="#">Soups</a></div>
+                                <div><a href="#">Accompaniments</a></div>
+                                <div><a href="#">Vegetarian Foods</a></div>
+                            </ul>
+                        </div>
+                        <span class="detail"><span>View all</span> <i class='bx bx-chevron-right'></i></span>
+                    </div>
+                    <div class="items">
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/tea_drink/06_3a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/tea_drink//06_4a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/tea_drink/06_5a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/tea_drink/06_9a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/tea_drink/07_10a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/tea_drink/07_5a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/tea_drink/07_7b.jpg" alt="">
+                            </div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/tea_drink/08_5a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="my_product-product_type">
+                <span class="title">
+                    <h3>KITCHEN & DINING</h3>
+                </span>
+                <div class="my_product">
+                    <div class="categories">
+                        <div class="categories_box">
+                            <img src="assets/img/banner/home_1_banner_pro_13.jpg" alt="">
+                        </div>
+                        <div class="categories_menu">
+                            <ul>
+                                <div><a href="#" style="color: black; font-weight: bold;">Best Seller</a></div>
+                                <div><a href="#">Meat & Poultry</a></div>
+                                <div><a href="#">Fruit</a></div>
+                                <div><a href="#">Vegetables</a></div>
+                                <div><a href="#">Milk, Butter & Eggs</a></div>
+                                <div><a href="#">Fish</a></div>
+                                <div><a href="#">Frozen</a></div>
+                                <div><a href="#">Cheese</a></div>
+                            </ul>
+                            <ul>
+                                <div><a href="#">Desserts</a></div>
+                                <div><a href="#">Pasta & Sauce</a></div>
+                                <div><a href="#">Ham, Deli & Dips</a></div>
+                                <div><a href="#">Pizza</a></div>
+                                <div><a href="#">Soups</a></div>
+                                <div><a href="#">Accompaniments</a></div>
+                                <div><a href="#">Vegetarian Foods</a></div>
+                            </ul>
+                        </div>
+                        <span class="detail"><span>View all</span> <i class='bx bx-chevron-right'></i></span>
+                    </div>
+                    <div class="items">
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/kitchen/08_1a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/kitchen/08_5a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/kitchen/09_10b-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/kitchen/09_11a-1-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/kitchen/09_2a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/kitchen/09_13a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/kitchen/09_7a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/kitchen/09_8a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="my_product-product_type">
+                <span class="title">
+                    <h3>FOOD CUPBOARD</h3>
+                </span>
+                <div class="my_product">
+                    <div class="categories">
+                        <div class="categories_box">
+                            <img src="assets/img/banner/home_1_banner_pro_4.jpg" alt="">
+                        </div>
+                        <div class="categories_menu">
+                            <ul>
+                                <div><a href="#" style="color: black; font-weight: bold;">Best Seller</a></div>
+                                <div><a href="#">Meat & Poultry</a></div>
+                                <div><a href="#">Fruit</a></div>
+                                <div><a href="#">Vegetables</a></div>
+                                <div><a href="#">Milk, Butter & Eggs</a></div>
+                                <div><a href="#">Fish</a></div>
+                                <div><a href="#">Frozen</a></div>
+                                <div><a href="#">Cheese</a></div>
+                            </ul>
+                            <ul>
+                                <div><a href="#">Desserts</a></div>
+                                <div><a href="#">Pasta & Sauce</a></div>
+                                <div><a href="#">Ham, Deli & Dips</a></div>
+                                <div><a href="#">Pizza</a></div>
+                                <div><a href="#">Soups</a></div>
+                                <div><a href="#">Accompaniments</a></div>
+                                <div><a href="#">Vegetarian Foods</a></div>
+                            </ul>
+                        </div>
+                        <span class="detail"><span>View all</span> <i class='bx bx-chevron-right'></i></span>
+                    </div>
+                    <div class="items">
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/food_cuboard/02_18a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img
+                                    src="assets/img/products/food_cuboard/02_19a-1-150x150.jpg" alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/food_cuboard/03_7a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/food_cuboard/04_1b-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/food_cuboard/04_1d-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/food_cuboard/04_2a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/food_cuboard/04_3a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img src="assets/img/products/food_cuboard/04_4a-150x150.jpg"
+                                    alt=""></div>
+                            <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <div class="price">$8.90 <span>$12.00</span></div>
+                            <div class="quantity">
+                                <div>
+                                    <div class="number">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                </div>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flash_details flash_details_footer">
+                <div class="header header_footer">
+                    <div>
+                        <span class="title"
+                            style="color: black; font-family: none; font-style: normal; font-family: 'Mulish', sans-serif;">RECOMMENDATIONS</span>
+                    </div>
+                    <span>
+                        <a href="#">New Arrivals</a>
+                        <a href="#">Best Selling</a>
+                        <a href="#">Most Popular</a>
+                        <a href="#">On Sales</a>
+                        <a href="#">All</a>
+                    </span>
+                </div>
+                <div class="container_product">
+                    <div id="prev"><i class='bx bx-chevron-left'></i></div>
+                    <div class="product_flash">
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img
+                                    src="assets/img/products/RECOMMENDATIONS/03_1a-150x150.jpg" alt=""></div>
+                            <div>
+                                <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="price">$8.90 <span>$12.00</span></div>
+                            </div>
+                        </div>
+
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img
+                                    src="assets/img/products/RECOMMENDATIONS/09_8a-150x150.jpg" alt=""></div>
+                            <div>
+                                <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="price">$8.90 <span>$12.00</span></div>
+                            </div>
+                        </div>
+
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img
+                                    src="assets/img/products/RECOMMENDATIONS/08_1a-150x150.jpg" alt=""></div>
+                            <div>
+                                <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="price">$8.90 <span>$12.00</span></div>
+                            </div>
+                        </div>
+
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img
+                                    src="assets/img/products/RECOMMENDATIONS/08_5a-150x150.jpg" alt=""></div>
+                            <div>
+                                <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="price">$8.90 <span>$12.00</span></div>
+                            </div>
+                        </div>
+
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img
+                                    src="assets/img/products/RECOMMENDATIONS/09_10b-150x150.jpg" alt=""></div>
+                            <div>
+                                <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="price">$8.90 <span>$12.00</span></div>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img
+                                    src="assets/img/products/RECOMMENDATIONS/09_11a-1-150x150.jpg" alt=""></div>
+                            <div>
+                                <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="price">$8.90 <span>$12.00</span></div>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img
+                                    src="assets/img/products/RECOMMENDATIONS/09_13a-150x150.jpg" alt=""></div>
+                            <div>
+                                <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="price">$8.90 <span>$12.00</span></div>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img
+                                    src="assets/img/products/RECOMMENDATIONS/09_2a-150x150.jpg" alt=""></div>
+                            <div>
+                                <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="price">$8.90 <span>$12.00</span></div>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="sale">26% off</div>
+                            <div class="icon">
+                                <i class='bx bx-fullscreen'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                            </div>
+                            <div class="container_image"><img
+                                    src="assets/img/products/RECOMMENDATIONS/09_7a-150x150.jpg" alt=""></div>
+                            <div>
+                                <div class="name">Taylors of Harrogate Yorkshire Coffee</div>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <div class="price">$8.90 <span>$12.00</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prev_next">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="next"><i class='bx bx-chevron-right'></i></div>
+                </div>
+
+            </div>
+            <div class="flash_details flash_details_footer">
+                <div class="header header_footer">
+                    <div>
+                        <span class="title"
+                            style="color: black; font-family: none; font-style: normal; font-family: 'Mulish', sans-serif;">Your
+                            Recent Viewed</span>
+                    </div>
+                    <span>View all <i class='bx bx-chevron-right'></i></span>
+                </div>
+                <div class="container_product viewed">
+                    <img src="assets/img/products/07_7b.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
     </div>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="item item1">
+                <div class="title">
+                    <h3>Farmart - Your Online Foods & Grocery</h3>
+                </div>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus viverra iaculis. Etiam
+                        vulputate et justo eget scelerisque.</p>
+                    <span style="font-size: 25px;"><i class='bx bx-phone'></i>(+965) 7492-4277</span>
+                    <span> <i class='bx bx-home'></i> 959 Homestead Street Eastlake, NYC</span>
+                    <span><i class='bx bx-envelope'></i>support@farmart.com</span>
+                </div>
+            </div>
+
+            <div class="item item2">
+                <div class="title">
+                    <h3>Help & Infor</h3>
+                </div>
+                <ul class="list__links">
+                    <li class="link__item">
+                        <span><a href="#">About Us</a></span>
+                    </li>
+
+                    <li class="link__item">
+                        <span><a href="#">Contact Us</a></span>
+                    </li>
+
+                    <li class="link__item">
+                        <span><a href="#">Store Locations</a></span>
+                    </li>
+
+                    <li class="link__item">
+                        <span><a href="#">Terms of Use</a></span>
+                    </li>
+
+                    <li class="link__item">
+                        <span><a href="#">Policy</a></span>
+                    </li>
+
+                    <li class="link__item">
+                        <span><a href="#">Flash Sale</a></span>
+                    </li>
+
+                    <li class="link__item">
+                        <span><a href="#">FAQs</a></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="item item3">
+                <div class="title">
+                    <h3>Corporate</h3>
+                </div>
+                <ul class="list__links">
+                    <li class="link__item">
+                        <span><a href="#">Become A Vendor</a></span>
+                    </li>
+
+                    <li class="link__item">
+                        <span><a href="#">Affiliate Program</a></span>
+                    </li>
+
+                    <li class="link__item">
+                        <span><a href="#">Farm Business</a></span>
+                    </li>
+
+                    <li class="link__item">
+                        <span><a href="#">Careers</a></span>
+                    </li>
+
+                    <li class="link__item">
+                        <span><a href="#">Our Suppliers</a></span>
+                    </li>
+
+                    <li class="link__item">
+                        <span><a href="#">Accessibility</a></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="item item4">
+                <div class="title">
+                    <h3>Farmart Newsletter</h3>
+                </div>
+                <p>Register now to get updates on promotions and coupns. Don't worry! We not spam</p>
+                <div class="footer__input">
+                    <input type="text" name="" id="" placeholder="Your email address">
+                    <button type="submit">Subscrible</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__categories-tag">
+
+        </div>
+
+        <div class="footer__copyright">
+            <div class="copyright">
+                <p>©2024 Farmart - Organic & Grocery Marketplace WordPress Theme All rights reserved</p>
+            </div>
+
+            <div class="social">
+                <span>Stay connected:</span>
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-pinterest-alt'></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 
 </body>
 
