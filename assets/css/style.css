@@ -179,20 +179,22 @@ header {
     display: flex;
     font-weight: bold;
     color: white;
-    padding: 0.3rem 0;
     font-size: 14px;
     align-items: center;
     justify-content: space-between;
 }
 
 .container_menu .menu .menu_icon {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-items: center;
     cursor: pointer;
     position: relative;
+    padding: 0.4rem;
 }
 .container_menu .menu .menu_icon ul {
+    visibility: hidden;
     position: absolute;
     z-index: 10;
     left: -12px;
@@ -218,7 +220,8 @@ header {
     box-shadow: none;
 }
 .container_menu .menu .menu_icon:hover ul {
-    top: 36px;
+    visibility: visible;
+    top: 38px;
     opacity: 1;
 
 }
@@ -239,10 +242,8 @@ header {
 .container_menu .menu .menu_icon>*:not(i) {
     margin-left: 1rem;
 }
-
-.container_menu .menu .menu_items>ul {
+.container_menu .menu .menu_items > ul {
     position: relative;
-    padding: 0.5rem 0;
     display: flex;
 }
 
@@ -250,10 +251,9 @@ header {
     list-style-type: none;
     padding: 0px 16px;
     position: relative;
-}
-
-.container_menu .menu .menu_items>ul>li:not(li:nth-child(6)) {
-    box-shadow: 0.4px 0 0 0 white;
+    display: flex;
+    align-items: center;
+    height: 38px;
 }
 
 .container_menu .menu .menu_items ul li a {
@@ -265,7 +265,6 @@ header {
 
 .container_menu .menu button {
     border: none;
-    line-height: 30px;
     padding: 0 1.4rem;
     border-radius: 4px;
     background-color: #fcb800;
@@ -274,6 +273,7 @@ header {
 }
 
 .container_menu .menu .menu_items ul li ul {
+    visibility: hidden;
     position: absolute;
     z-index: 20;
     top: 40px;
@@ -313,7 +313,8 @@ header {
 }
 
 .container_menu .menu .menu_items>ul>li:hover ul {
-    transform: translateY(-9px);
+    visibility: visible;
+    transform: translateY(-1px);
     opacity: 1;
 }
 
